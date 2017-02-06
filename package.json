@@ -1,0 +1,29 @@
+{
+  "name": "d3-foodweb",
+  "version": "0.0.1",
+  "description": "Plot food web using a custom force layout",
+  "keywords": [
+    "d3",
+    "d3-module"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "build/d3-foodweb.js",
+  "jsnext:main": "index",
+  "homepage": "https://github.com/kakearney/d3-foodweb",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kakearney/d3-foodweb.git"
+  },
+  "scripts": {
+    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -o build/d3-foodweb.js -- index.js",
+    "test": "tape 'test/**/*-test.js'",
+    "prepublish": "uglifyjs build/d3-foodweb.js -c -m -o build/d3-foodweb.min.js",
+    "postpublish": "zip -j build/d3-foodweb.zip -- LICENSE README.md build/d3-foodweb.js build/d3-foodweb.min.js"
+  },
+  "devDependencies": {
+    "d3": "^1.29.5",
+    "rollup": "0.27",
+    "tape": "4",
+    "uglify-js": "2"
+  }
+}

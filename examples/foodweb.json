@@ -1,0 +1,2849 @@
+{
+	"nodes": [
+		[
+			{
+				"B": 0.000219581343,
+				"type": 0,
+				"TL": 2.959442584,
+				"cval": 0.4692617784,
+				"id": "Snook0_12",
+				"TG": 9
+			},
+			{
+				"B": 0.0187197663,
+				"type": 0,
+				"TL": 2.974915839,
+				"cval": 0.5343087978,
+				"id": "Snook3_12",
+				"TG": 9
+			},
+			{
+				"B": 0.229919672,
+				"type": 0,
+				"TL": 3.502109352,
+				"cval": 0.5273222878,
+				"id": "Snook12_48",
+				"TG": 13
+			},
+			{
+				"B": 0.0996193215,
+				"type": 0,
+				"TL": 3.733791633,
+				"cval": 0.5446390308,
+				"id": "Snook48_90",
+				"TG": 13
+			},
+			{
+				"B": 0.0202408545,
+				"type": 0,
+				"TL": 3.836046975,
+				"cval": 0.3490140535,
+				"id": "Snook90",
+				"TG": 11
+			},
+			{
+				"B": 0.000273913174,
+				"type": 0,
+				"TL": 3.01406205,
+				"cval": 0.2664489792,
+				"id": "RedDrum0_3",
+				"TG": 4
+			},
+			{
+				"B": 0.00415810756,
+				"type": 0,
+				"TL": 3.11842337,
+				"cval": 0.4838985239,
+				"id": "RedDrum3_8",
+				"TG": 9
+			},
+			{
+				"B": 0.0272602104,
+				"type": 0,
+				"TL": 3.627668175,
+				"cval": 0.5676637546,
+				"id": "RedDrum8_18",
+				"TG": 15
+			},
+			{
+				"B": 0.108259343,
+				"type": 0,
+				"TL": 3.622170321,
+				"cval": 0.5316517084,
+				"id": "RedDrum18_36",
+				"TG": 15
+			},
+			{
+				"B": 0.300400048,
+				"type": 0,
+				"TL": 3.584577582,
+				"cval": 0.552698837,
+				"id": "RedDrum36",
+				"TG": 15
+			},
+			{
+				"B": 9.0966947e-05,
+				"type": 0,
+				"TL": 3.086136854,
+				"cval": 0.395233833,
+				"id": "SeaTrout0_3",
+				"TG": 9
+			},
+			{
+				"B": 0.0259713996,
+				"type": 0,
+				"TL": 3.458703725,
+				"cval": 0.6277014489,
+				"id": "SeaTrout3_18",
+				"TG": 13
+			},
+			{
+				"B": 0.220055297,
+				"type": 0,
+				"TL": 3.734370778,
+				"cval": 0.5387986868,
+				"id": "SeaTrout18",
+				"TG": 15
+			},
+			{
+				"B": 1.96947403e-05,
+				"type": 0,
+				"TL": 3.053571261,
+				"cval": 0.2707693323,
+				"id": "SandTrout0_3",
+				"TG": 9
+			},
+			{
+				"B": 0.00252330722,
+				"type": 0,
+				"TL": 3.39046744,
+				"cval": 0.5575200219,
+				"id": "SandTrout3_12",
+				"TG": 13
+			},
+			{
+				"B": 0.100014657,
+				"type": 0,
+				"TL": 3.717776805,
+				"cval": 0.5520990475,
+				"id": "SandTrout12",
+				"TG": 13
+			},
+			{
+				"B": 0.0648558587,
+				"type": 0,
+				"TL": 2.945967281,
+				"cval": 0.2819786803,
+				"id": "Mullet0_6",
+				"TG": 4
+			},
+			{
+				"B": 0.522470474,
+				"type": 0,
+				"TL": 2.913896827,
+				"cval": 0.3442004898,
+				"id": "Mullet6_18",
+				"TG": 8
+			},
+			{
+				"B": 2.80055499,
+				"type": 0,
+				"TL": 2.026331945,
+				"cval": 0.298466179,
+				"id": "Mullet18",
+				"TG": 8
+			},
+			{
+				"B": 1.24408075e-06,
+				"type": 0,
+				"TL": 3.222436701,
+				"cval": 0.4770543258,
+				"id": "Mackrel0_3",
+				"TG": 13
+			},
+			{
+				"B": 0.0183387771,
+				"type": 0,
+				"TL": 3.884142915,
+				"cval": 0.5202057431,
+				"id": "Mackrel3",
+				"TG": 11
+			},
+			{
+				"B": 0.00978701282,
+				"type": 0,
+				"TL": 3.20419487,
+				"cval": 0.2945137394,
+				"id": "Ladyfish0_10",
+				"TG": 9
+			},
+			{
+				"B": 0.0889999121,
+				"type": 0,
+				"TL": 3.310434552,
+				"cval": 0.5150678945,
+				"id": "Ladyfish10",
+				"TG": 13
+			},
+			{
+				"B": 0.02393293744,
+				"type": 0,
+				"TL": 3.85415766,
+				"cval": 0.5112025931,
+				"id": "Jacks",
+				"TG": 13
+			},
+			{
+				"B": 0.3850912054,
+				"type": 0,
+				"TL": 2.752972305,
+				"cval": 0.5432091582,
+				"id": "BayAnchovy",
+				"TG": 16
+			},
+			{
+				"B": 0.319999993,
+				"type": 0,
+				"TL": 2.623319082,
+				"cval": 0.6378063252,
+				"id": "PinFish",
+				"TG": 16
+			},
+			{
+				"B": 0.689999998,
+				"type": 0,
+				"TL": 2.686220007,
+				"cval": 0.5277929603,
+				"id": "Spot",
+				"TG": 16
+			},
+			{
+				"B": 0.0900000036,
+				"type": 0,
+				"TL": 3.170890445,
+				"cval": 0.4096287041,
+				"id": "SilverPerch",
+				"TG": 16
+			},
+			{
+				"B": 0.0799999982,
+				"type": 0,
+				"TL": 3.062410716,
+				"cval": 0.3687834293,
+				"id": "ScaledSardine",
+				"TG": 16
+			},
+			{
+				"B": 0.181500003,
+				"type": 0,
+				"TL": 3.059525799,
+				"cval": 0.501923552,
+				"id": "Mojarra",
+				"TG": 16
+			},
+			{
+				"B": 0.0388999991,
+				"type": 0,
+				"TL": 3.077117114,
+				"cval": 0.3115839896,
+				"id": "ThreadfinHerring",
+				"TG": 4
+			},
+			{
+				"B": 0.1208904046,
+				"type": 0,
+				"TL": 2.736736738,
+				"cval": 0.2455999938,
+				"id": "Manhaden",
+				"TG": 4
+			},
+			{
+				"B": 0.136439994,
+				"type": 0,
+				"TL": 2.928011912,
+				"cval": 0.3678547585,
+				"id": "Menidia_silverside",
+				"TG": 4
+			},
+			{
+				"B": 0.056499999,
+				"type": 0,
+				"TL": 3.48473069,
+				"cval": 0.6583538128,
+				"id": "Catfish",
+				"TG": 11
+			},
+			{
+				"B": 0.0370000005,
+				"type": 0,
+				"TL": 2.980974567,
+				"cval": 0.315912341,
+				"id": "Bumper",
+				"TG": 8
+			},
+			{
+				"B": 1.258789732,
+				"type": 0,
+				"TL": 2.183243018,
+				"cval": 0.6876991427,
+				"id": "CaridanShrimp",
+				"TG": 16
+			},
+			{
+				"B": 0.0799999982,
+				"type": 0,
+				"TL": 2.476425346,
+				"cval": 0.7407077331,
+				"id": "Shrimp",
+				"TG": 16
+			},
+			{
+				"B": 0.08248251754,
+				"type": 0,
+				"TL": 2.47522117,
+				"cval": 0.8039309905,
+				"id": "StoneCrab",
+				"TG": 20
+			},
+			{
+				"B": 0.122000001,
+				"type": 0,
+				"TL": 2.65317892,
+				"cval": 0.7256235671,
+				"id": "BlueCrab",
+				"TG": 20
+			},
+			{
+				"B": 0.899999976,
+				"type": 0,
+				"TL": 2.528632553,
+				"cval": 0.2795772213,
+				"id": "Cyprinodontids",
+				"TG": 5
+			},
+			{
+				"B": 0.0500000007,
+				"type": 0,
+				"TL": 2.63435907,
+				"cval": 0.3354926689,
+				"id": "Poecilids",
+				"TG": 5
+			},
+			{
+				"B": 0.100000001,
+				"type": 0,
+				"TL": 3.585961504,
+				"cval": 0.563296116,
+				"id": "Pigfish",
+				"TG": 17
+			},
+			{
+				"B": 0.025639147,
+				"type": 0,
+				"TL": 3.082460689,
+				"cval": 0.5848633826,
+				"id": "Gobies",
+				"TG": 17
+			},
+			{
+				"B": 4,
+				"type": 0,
+				"TL": 3,
+				"cval": -0,
+				"id": "Rays",
+				"TG": 3
+			},
+			{
+				"B": 6.480879713,
+				"type": 0,
+				"TL": 2.057265106,
+				"cval": 0.5591544425,
+				"id": "BenthicInvertebrates",
+				"TG": 6
+			},
+			{
+				"B": 1.207243102,
+				"type": 0,
+				"TL": 2.091091089,
+				"cval": 0.36399999,
+				"id": "MacroZooplankton",
+				"TG": 6
+			},
+			{
+				"B": 0.7862258789,
+				"type": 0,
+				"TL": 2.001001001,
+				"cval": -0,
+				"id": "MicroZoolplankton",
+				"TG": 6
+			},
+			{
+				"B": 20,
+				"type": 0,
+				"TL": 2,
+				"cval": -0,
+				"id": "Infauna",
+				"TG": 2
+			},
+			{
+				"B": 29.7779999,
+				"type": 1,
+				"TL": 1,
+				"cval": 0,
+				"id": "AttachedMicroalgae",
+				"TG": 1
+			},
+			{
+				"B": 175.617004,
+				"type": 1,
+				"TL": 1,
+				"cval": 0,
+				"id": "SeaGrass",
+				"TG": 1
+			},
+			{
+				"B": 25,
+				"type": 1,
+				"TL": 1,
+				"cval": 0,
+				"id": "Phytoplankton",
+				"TG": 1
+			},
+			{
+				"B": 10,
+				"type": 2,
+				"TL": 1,
+				"cval": 1,
+				"id": "Detritus",
+				"TG": 21
+			},
+			{
+				"B": 0.75,
+				"type": 3,
+				"TL": 3.322186906,
+				"cval": 0.3137109493,
+				"id": "Gillnet_Trawl",
+				"TG": 7
+			},
+			{
+				"B": 0.01999999956,
+				"type": 3,
+				"TL": 3.744854522,
+				"cval": 0.394404576,
+				"id": "PurseSeine",
+				"TG": 10
+			},
+			{
+				"B": 0.01099999983,
+				"type": 3,
+				"TL": 3.781103071,
+				"cval": 0.5273522727,
+				"id": "HaulSeine",
+				"TG": 10
+			},
+			{
+				"B": 0.1220000003,
+				"type": 3,
+				"TL": 4.658304329,
+				"cval": 0.5455804881,
+				"id": "Rec_HookLine",
+				"TG": 14
+			},
+			{
+				"B": 0.0989999995,
+				"type": 3,
+				"TL": 3.65317892,
+				"cval": 0.7256235671,
+				"id": "CrabTraps",
+				"TG": 18
+			},
+			{
+				"B": 0.0020000001,
+				"type": 3,
+				"TL": 3.897104763,
+				"cval": 0.5237175147,
+				"id": "CastNet",
+				"TG": 12
+			},
+			{
+				"B": 0.00100000005,
+				"type": 3,
+				"TL": 3.476425346,
+				"cval": 0.7407077331,
+				"id": "BaitTrawl",
+				"TG": 19
+			}
+		]
+	],
+	"links1": [
+		[
+			{
+				"source": "Snook0_12",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "Snook0_12",
+				"target": "Detritus"
+			},
+			{
+				"source": "Snook3_12",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "Snook3_12",
+				"target": "Detritus"
+			},
+			{
+				"source": "Snook12_48",
+				"target": "Detritus"
+			},
+			{
+				"source": "Snook12_48",
+				"target": "Rec_HookLine"
+			},
+			{
+				"source": "Snook48_90",
+				"target": "Detritus"
+			},
+			{
+				"source": "Snook48_90",
+				"target": "Rec_HookLine"
+			},
+			{
+				"source": "Snook90",
+				"target": "Detritus"
+			},
+			{
+				"source": "RedDrum0_3",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "RedDrum0_3",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "RedDrum0_3",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "RedDrum0_3",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "RedDrum0_3",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "RedDrum0_3",
+				"target": "Detritus"
+			},
+			{
+				"source": "RedDrum3_8",
+				"target": "Jacks"
+			},
+			{
+				"source": "RedDrum3_8",
+				"target": "Detritus"
+			},
+			{
+				"source": "RedDrum8_18",
+				"target": "Detritus"
+			},
+			{
+				"source": "RedDrum18_36",
+				"target": "Detritus"
+			},
+			{
+				"source": "RedDrum18_36",
+				"target": "Rec_HookLine"
+			},
+			{
+				"source": "RedDrum36",
+				"target": "Detritus"
+			},
+			{
+				"source": "RedDrum36",
+				"target": "Rec_HookLine"
+			},
+			{
+				"source": "SeaTrout0_3",
+				"target": "Pigfish"
+			},
+			{
+				"source": "SeaTrout0_3",
+				"target": "Detritus"
+			},
+			{
+				"source": "SeaTrout3_18",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "SeaTrout3_18",
+				"target": "Snook90"
+			},
+			{
+				"source": "SeaTrout3_18",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "SeaTrout3_18",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "SeaTrout3_18",
+				"target": "Detritus"
+			},
+			{
+				"source": "SeaTrout18",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "SeaTrout18",
+				"target": "Detritus"
+			},
+			{
+				"source": "SeaTrout18",
+				"target": "Rec_HookLine"
+			},
+			{
+				"source": "SandTrout0_3",
+				"target": "SandTrout3_12"
+			},
+			{
+				"source": "SandTrout0_3",
+				"target": "Detritus"
+			},
+			{
+				"source": "SandTrout3_12",
+				"target": "Snook90"
+			},
+			{
+				"source": "SandTrout3_12",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "SandTrout3_12",
+				"target": "Detritus"
+			},
+			{
+				"source": "SandTrout12",
+				"target": "Snook90"
+			},
+			{
+				"source": "SandTrout12",
+				"target": "Detritus"
+			},
+			{
+				"source": "SandTrout12",
+				"target": "Rec_HookLine"
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "Snook90"
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "Ladyfish10"
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "Detritus"
+			},
+			{
+				"source": "Mullet6_18",
+				"target": "Snook90"
+			},
+			{
+				"source": "Mullet6_18",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "Mullet6_18",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "Mullet6_18",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "Mullet6_18",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "Mullet6_18",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "Mullet6_18",
+				"target": "Catfish"
+			},
+			{
+				"source": "Mullet6_18",
+				"target": "Detritus"
+			},
+			{
+				"source": "Mullet6_18",
+				"target": "Gillnet_Trawl"
+			},
+			{
+				"source": "Mullet18",
+				"target": "Snook90"
+			},
+			{
+				"source": "Mullet18",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "Mullet18",
+				"target": "Catfish"
+			},
+			{
+				"source": "Mullet18",
+				"target": "Detritus"
+			},
+			{
+				"source": "Mullet18",
+				"target": "Gillnet_Trawl"
+			},
+			{
+				"source": "Mackrel0_3",
+				"target": "Jacks"
+			},
+			{
+				"source": "Mackrel0_3",
+				"target": "Detritus"
+			},
+			{
+				"source": "Mackrel3",
+				"target": "Detritus"
+			},
+			{
+				"source": "Mackrel3",
+				"target": "Rec_HookLine"
+			},
+			{
+				"source": "Ladyfish0_10",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "Ladyfish0_10",
+				"target": "Snook90"
+			},
+			{
+				"source": "Ladyfish0_10",
+				"target": "Jacks"
+			},
+			{
+				"source": "Ladyfish0_10",
+				"target": "Detritus"
+			},
+			{
+				"source": "Ladyfish10",
+				"target": "Snook90"
+			},
+			{
+				"source": "Ladyfish10",
+				"target": "Jacks"
+			},
+			{
+				"source": "Ladyfish10",
+				"target": "Detritus"
+			},
+			{
+				"source": "Ladyfish10",
+				"target": "Rec_HookLine"
+			},
+			{
+				"source": "Jacks",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "Jacks",
+				"target": "Jacks"
+			},
+			{
+				"source": "Jacks",
+				"target": "Detritus"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Snook90"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "SeaTrout3_18"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "SandTrout3_12"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Ladyfish0_10"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Ladyfish10"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Jacks"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Catfish"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Detritus"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "PurseSeine"
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "HaulSeine"
+			},
+			{
+				"source": "PinFish",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "PinFish",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "PinFish",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "PinFish",
+				"target": "Snook90"
+			},
+			{
+				"source": "PinFish",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "PinFish",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "PinFish",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "PinFish",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "PinFish",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "PinFish",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "PinFish",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "PinFish",
+				"target": "Jacks"
+			},
+			{
+				"source": "PinFish",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "PinFish",
+				"target": "Catfish"
+			},
+			{
+				"source": "PinFish",
+				"target": "Pigfish"
+			},
+			{
+				"source": "PinFish",
+				"target": "Detritus"
+			},
+			{
+				"source": "PinFish",
+				"target": "CastNet"
+			},
+			{
+				"source": "Spot",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "Spot",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "Spot",
+				"target": "Snook90"
+			},
+			{
+				"source": "Spot",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "Spot",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "Spot",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "Spot",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "Spot",
+				"target": "SandTrout3_12"
+			},
+			{
+				"source": "Spot",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "Spot",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "Spot",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "Spot",
+				"target": "Ladyfish10"
+			},
+			{
+				"source": "Spot",
+				"target": "Jacks"
+			},
+			{
+				"source": "Spot",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "Spot",
+				"target": "Catfish"
+			},
+			{
+				"source": "Spot",
+				"target": "Pigfish"
+			},
+			{
+				"source": "Spot",
+				"target": "Detritus"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Snook90"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "SeaTrout3_18"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "SandTrout3_12"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Ladyfish10"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Jacks"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Catfish"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Pigfish"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Detritus"
+			},
+			{
+				"source": "SilverPerch",
+				"target": "CastNet"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "Snook90"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "SeaTrout3_18"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "SandTrout3_12"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "Ladyfish10"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "Jacks"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "Catfish"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "Detritus"
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "HaulSeine"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Snook90"
+			},
+			{
+				"source": "Mojarra",
+				"target": "RedDrum3_8"
+			},
+			{
+				"source": "Mojarra",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "Mojarra",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "Mojarra",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "Mojarra",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "Mojarra",
+				"target": "SandTrout3_12"
+			},
+			{
+				"source": "Mojarra",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Ladyfish0_10"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Ladyfish10"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Jacks"
+			},
+			{
+				"source": "Mojarra",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Catfish"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Pigfish"
+			},
+			{
+				"source": "Mojarra",
+				"target": "Detritus"
+			},
+			{
+				"source": "ThreadfinHerring",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "ThreadfinHerring",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "ThreadfinHerring",
+				"target": "Snook90"
+			},
+			{
+				"source": "ThreadfinHerring",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "ThreadfinHerring",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "ThreadfinHerring",
+				"target": "Jacks"
+			},
+			{
+				"source": "ThreadfinHerring",
+				"target": "Catfish"
+			},
+			{
+				"source": "ThreadfinHerring",
+				"target": "Detritus"
+			},
+			{
+				"source": "Manhaden",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "Manhaden",
+				"target": "Snook90"
+			},
+			{
+				"source": "Manhaden",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "Manhaden",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "Manhaden",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "Manhaden",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "Manhaden",
+				"target": "Catfish"
+			},
+			{
+				"source": "Manhaden",
+				"target": "Detritus"
+			},
+			{
+				"source": "Manhaden",
+				"target": "PurseSeine"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "Snook90"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "SeaTrout3_18"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "Jacks"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "Pigfish"
+			},
+			{
+				"source": "Menidia_silverside",
+				"target": "Detritus"
+			},
+			{
+				"source": "Catfish",
+				"target": "Snook90"
+			},
+			{
+				"source": "Catfish",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "Catfish",
+				"target": "SeaTrout0_3"
+			},
+			{
+				"source": "Catfish",
+				"target": "Catfish"
+			},
+			{
+				"source": "Catfish",
+				"target": "Detritus"
+			},
+			{
+				"source": "Catfish",
+				"target": "Rec_HookLine"
+			},
+			{
+				"source": "Bumper",
+				"target": "Snook90"
+			},
+			{
+				"source": "Bumper",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "Bumper",
+				"target": "Jacks"
+			},
+			{
+				"source": "Bumper",
+				"target": "Catfish"
+			},
+			{
+				"source": "Bumper",
+				"target": "Detritus"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "RedDrum3_8"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "SeaTrout0_3"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "SeaTrout3_18"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "SandTrout0_3"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "SandTrout3_12"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Ladyfish0_10"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Ladyfish10"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Jacks"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "BayAnchovy"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "PinFish"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Spot"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Catfish"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Pigfish"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Gobies"
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Detritus"
+			},
+			{
+				"source": "Shrimp",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "Shrimp",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "Shrimp",
+				"target": "Snook90"
+			},
+			{
+				"source": "Shrimp",
+				"target": "RedDrum3_8"
+			},
+			{
+				"source": "Shrimp",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "Shrimp",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "Shrimp",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "Shrimp",
+				"target": "SeaTrout3_18"
+			},
+			{
+				"source": "Shrimp",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "Shrimp",
+				"target": "SandTrout3_12"
+			},
+			{
+				"source": "Shrimp",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "Shrimp",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "Shrimp",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "Shrimp",
+				"target": "Ladyfish10"
+			},
+			{
+				"source": "Shrimp",
+				"target": "Jacks"
+			},
+			{
+				"source": "Shrimp",
+				"target": "PinFish"
+			},
+			{
+				"source": "Shrimp",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "Shrimp",
+				"target": "Catfish"
+			},
+			{
+				"source": "Shrimp",
+				"target": "BlueCrab"
+			},
+			{
+				"source": "Shrimp",
+				"target": "Detritus"
+			},
+			{
+				"source": "Shrimp",
+				"target": "BaitTrawl"
+			},
+			{
+				"source": "StoneCrab",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "StoneCrab",
+				"target": "Catfish"
+			},
+			{
+				"source": "StoneCrab",
+				"target": "StoneCrab"
+			},
+			{
+				"source": "StoneCrab",
+				"target": "BlueCrab"
+			},
+			{
+				"source": "StoneCrab",
+				"target": "Detritus"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "Snook90"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "Mackrel3"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "Catfish"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "StoneCrab"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "BlueCrab"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "Detritus"
+			},
+			{
+				"source": "BlueCrab",
+				"target": "CrabTraps"
+			},
+			{
+				"source": "Cyprinodontids",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "Cyprinodontids",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "Cyprinodontids",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "Cyprinodontids",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "Cyprinodontids",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "Cyprinodontids",
+				"target": "SeaTrout3_18"
+			},
+			{
+				"source": "Cyprinodontids",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "Cyprinodontids",
+				"target": "Ladyfish0_10"
+			},
+			{
+				"source": "Cyprinodontids",
+				"target": "Detritus"
+			},
+			{
+				"source": "Poecilids",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "Poecilids",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "Poecilids",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "Poecilids",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "Poecilids",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "Poecilids",
+				"target": "SeaTrout3_18"
+			},
+			{
+				"source": "Poecilids",
+				"target": "Ladyfish0_10"
+			},
+			{
+				"source": "Poecilids",
+				"target": "Detritus"
+			},
+			{
+				"source": "Pigfish",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "Pigfish",
+				"target": "Snook48_90"
+			},
+			{
+				"source": "Pigfish",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "Pigfish",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "Pigfish",
+				"target": "Ladyfish10"
+			},
+			{
+				"source": "Pigfish",
+				"target": "Jacks"
+			},
+			{
+				"source": "Pigfish",
+				"target": "Detritus"
+			},
+			{
+				"source": "Gobies",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "Gobies",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "Gobies",
+				"target": "SeaTrout3_18"
+			},
+			{
+				"source": "Gobies",
+				"target": "SeaTrout18"
+			},
+			{
+				"source": "Gobies",
+				"target": "Detritus"
+			},
+			{
+				"source": "Rays",
+				"target": "Detritus"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Snook0_12"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "RedDrum0_3"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "RedDrum3_8"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "RedDrum8_18"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "RedDrum18_36"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "RedDrum36"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "SeaTrout0_3"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "SandTrout0_3"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "SandTrout3_12"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "SandTrout12"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Mullet6_18"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Mullet18"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Ladyfish0_10"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Ladyfish10"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Jacks"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "BayAnchovy"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "PinFish"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Spot"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "ScaledSardine"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Mojarra"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Menidia_silverside"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Catfish"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Bumper"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "CaridanShrimp"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Shrimp"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "StoneCrab"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "BlueCrab"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Cyprinodontids"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Poecilids"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Pigfish"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Gobies"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "BenthicInvertebrates"
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "Detritus"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Snook0_12"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Snook12_48"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "RedDrum0_3"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "RedDrum3_8"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "SeaTrout0_3"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "SeaTrout3_18"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "SandTrout0_3"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Mullet0_6"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Mullet6_18"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Mullet18"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Ladyfish0_10"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Ladyfish10"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "BayAnchovy"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "PinFish"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Spot"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "ScaledSardine"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Mojarra"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "ThreadfinHerring"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Manhaden"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Menidia_silverside"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Bumper"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "CaridanShrimp"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Shrimp"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "BlueCrab"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "BenthicInvertebrates"
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "Detritus"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Snook0_12"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "RedDrum0_3"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "SeaTrout0_3"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "SandTrout0_3"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Mullet0_6"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Mullet6_18"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Mullet18"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Mackrel0_3"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Ladyfish0_10"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "BayAnchovy"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "PinFish"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Spot"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "SilverPerch"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "ScaledSardine"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Mojarra"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "ThreadfinHerring"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Manhaden"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Menidia_silverside"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Bumper"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "CaridanShrimp"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Shrimp"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "BenthicInvertebrates"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "MacroZooplankton"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "MicroZoolplankton"
+			},
+			{
+				"source": "MicroZoolplankton",
+				"target": "Detritus"
+			},
+			{
+				"source": "Infauna",
+				"target": "Rays"
+			},
+			{
+				"source": "Infauna",
+				"target": "Detritus"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "RedDrum0_3"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "Mullet6_18"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "Mullet18"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "PinFish"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "Spot"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "Bumper"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "CaridanShrimp"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "Shrimp"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "Cyprinodontids"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "Poecilids"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "BenthicInvertebrates"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "MicroZoolplankton"
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "Detritus"
+			},
+			{
+				"source": "SeaGrass",
+				"target": "Mullet18"
+			},
+			{
+				"source": "SeaGrass",
+				"target": "BenthicInvertebrates"
+			},
+			{
+				"source": "SeaGrass",
+				"target": "Detritus"
+			},
+			{
+				"source": "Phytoplankton",
+				"target": "RedDrum0_3"
+			},
+			{
+				"source": "Phytoplankton",
+				"target": "PinFish"
+			},
+			{
+				"source": "Phytoplankton",
+				"target": "Spot"
+			},
+			{
+				"source": "Phytoplankton",
+				"target": "ThreadfinHerring"
+			},
+			{
+				"source": "Phytoplankton",
+				"target": "Manhaden"
+			},
+			{
+				"source": "Phytoplankton",
+				"target": "Menidia_silverside"
+			},
+			{
+				"source": "Phytoplankton",
+				"target": "BenthicInvertebrates"
+			},
+			{
+				"source": "Phytoplankton",
+				"target": "MacroZooplankton"
+			},
+			{
+				"source": "Phytoplankton",
+				"target": "MicroZoolplankton"
+			},
+			{
+				"source": "Phytoplankton",
+				"target": "Infauna"
+			},
+			{
+				"source": "Phytoplankton",
+				"target": "Detritus"
+			},
+			{
+				"source": "Detritus",
+				"target": "Snook0_12"
+			},
+			{
+				"source": "Detritus",
+				"target": "Snook3_12"
+			},
+			{
+				"source": "Detritus",
+				"target": "RedDrum0_3"
+			},
+			{
+				"source": "Detritus",
+				"target": "RedDrum3_8"
+			},
+			{
+				"source": "Detritus",
+				"target": "Mullet0_6"
+			},
+			{
+				"source": "Detritus",
+				"target": "Mullet6_18"
+			},
+			{
+				"source": "Detritus",
+				"target": "Mullet18"
+			},
+			{
+				"source": "Detritus",
+				"target": "BayAnchovy"
+			},
+			{
+				"source": "Detritus",
+				"target": "PinFish"
+			},
+			{
+				"source": "Detritus",
+				"target": "Spot"
+			},
+			{
+				"source": "Detritus",
+				"target": "Manhaden"
+			},
+			{
+				"source": "Detritus",
+				"target": "Menidia_silverside"
+			},
+			{
+				"source": "Detritus",
+				"target": "Bumper"
+			},
+			{
+				"source": "Detritus",
+				"target": "CaridanShrimp"
+			},
+			{
+				"source": "Detritus",
+				"target": "Shrimp"
+			},
+			{
+				"source": "Detritus",
+				"target": "StoneCrab"
+			},
+			{
+				"source": "Detritus",
+				"target": "BlueCrab"
+			},
+			{
+				"source": "Detritus",
+				"target": "BenthicInvertebrates"
+			},
+			{
+				"source": "Detritus",
+				"target": "MacroZooplankton"
+			},
+			{
+				"source": "Rec_HookLine",
+				"target": "Detritus"
+			}
+		]
+	],
+	"links2": [
+		[
+			{
+				"source": "Snook0_12",
+				"target": "Snook3_12",
+				"TG": 9
+			},
+			{
+				"source": "Snook0_12",
+				"target": "RedDrum3_8",
+				"TG": 9
+			},
+			{
+				"source": "Snook0_12",
+				"target": "SeaTrout0_3",
+				"TG": 9
+			},
+			{
+				"source": "Snook0_12",
+				"target": "SandTrout0_3",
+				"TG": 9
+			},
+			{
+				"source": "Snook0_12",
+				"target": "Ladyfish0_10",
+				"TG": 9
+			},
+			{
+				"source": "Snook3_12",
+				"target": "RedDrum3_8",
+				"TG": 9
+			},
+			{
+				"source": "Snook3_12",
+				"target": "SeaTrout0_3",
+				"TG": 9
+			},
+			{
+				"source": "Snook3_12",
+				"target": "SandTrout0_3",
+				"TG": 9
+			},
+			{
+				"source": "Snook3_12",
+				"target": "Ladyfish0_10",
+				"TG": 9
+			},
+			{
+				"source": "Snook12_48",
+				"target": "Snook48_90",
+				"TG": 13
+			},
+			{
+				"source": "Snook12_48",
+				"target": "SeaTrout3_18",
+				"TG": 13
+			},
+			{
+				"source": "Snook12_48",
+				"target": "SandTrout3_12",
+				"TG": 13
+			},
+			{
+				"source": "Snook12_48",
+				"target": "SandTrout12",
+				"TG": 13
+			},
+			{
+				"source": "Snook12_48",
+				"target": "Mackrel0_3",
+				"TG": 13
+			},
+			{
+				"source": "Snook12_48",
+				"target": "Ladyfish10",
+				"TG": 13
+			},
+			{
+				"source": "Snook12_48",
+				"target": "Jacks",
+				"TG": 13
+			},
+			{
+				"source": "Snook48_90",
+				"target": "SeaTrout3_18",
+				"TG": 13
+			},
+			{
+				"source": "Snook48_90",
+				"target": "SandTrout3_12",
+				"TG": 13
+			},
+			{
+				"source": "Snook48_90",
+				"target": "SandTrout12",
+				"TG": 13
+			},
+			{
+				"source": "Snook48_90",
+				"target": "Mackrel0_3",
+				"TG": 13
+			},
+			{
+				"source": "Snook48_90",
+				"target": "Ladyfish10",
+				"TG": 13
+			},
+			{
+				"source": "Snook48_90",
+				"target": "Jacks",
+				"TG": 13
+			},
+			{
+				"source": "Snook90",
+				"target": "Mackrel3",
+				"TG": 11
+			},
+			{
+				"source": "Snook90",
+				"target": "Catfish",
+				"TG": 11
+			},
+			{
+				"source": "RedDrum0_3",
+				"target": "Mullet0_6",
+				"TG": 4
+			},
+			{
+				"source": "RedDrum0_3",
+				"target": "ThreadfinHerring",
+				"TG": 4
+			},
+			{
+				"source": "RedDrum0_3",
+				"target": "Manhaden",
+				"TG": 4
+			},
+			{
+				"source": "RedDrum0_3",
+				"target": "Menidia_silverside",
+				"TG": 4
+			},
+			{
+				"source": "RedDrum3_8",
+				"target": "SeaTrout0_3",
+				"TG": 9
+			},
+			{
+				"source": "RedDrum3_8",
+				"target": "SandTrout0_3",
+				"TG": 9
+			},
+			{
+				"source": "RedDrum3_8",
+				"target": "Ladyfish0_10",
+				"TG": 9
+			},
+			{
+				"source": "RedDrum8_18",
+				"target": "RedDrum18_36",
+				"TG": 15
+			},
+			{
+				"source": "RedDrum8_18",
+				"target": "RedDrum36",
+				"TG": 15
+			},
+			{
+				"source": "RedDrum8_18",
+				"target": "SeaTrout18",
+				"TG": 15
+			},
+			{
+				"source": "RedDrum18_36",
+				"target": "RedDrum36",
+				"TG": 15
+			},
+			{
+				"source": "RedDrum18_36",
+				"target": "SeaTrout18",
+				"TG": 15
+			},
+			{
+				"source": "RedDrum36",
+				"target": "SeaTrout18",
+				"TG": 15
+			},
+			{
+				"source": "SeaTrout0_3",
+				"target": "SandTrout0_3",
+				"TG": 9
+			},
+			{
+				"source": "SeaTrout0_3",
+				"target": "Ladyfish0_10",
+				"TG": 9
+			},
+			{
+				"source": "SeaTrout3_18",
+				"target": "SandTrout3_12",
+				"TG": 13
+			},
+			{
+				"source": "SeaTrout3_18",
+				"target": "SandTrout12",
+				"TG": 13
+			},
+			{
+				"source": "SeaTrout3_18",
+				"target": "Mackrel0_3",
+				"TG": 13
+			},
+			{
+				"source": "SeaTrout3_18",
+				"target": "Ladyfish10",
+				"TG": 13
+			},
+			{
+				"source": "SeaTrout3_18",
+				"target": "Jacks",
+				"TG": 13
+			},
+			{
+				"source": "SandTrout0_3",
+				"target": "Ladyfish0_10",
+				"TG": 9
+			},
+			{
+				"source": "SandTrout3_12",
+				"target": "SandTrout12",
+				"TG": 13
+			},
+			{
+				"source": "SandTrout3_12",
+				"target": "Mackrel0_3",
+				"TG": 13
+			},
+			{
+				"source": "SandTrout3_12",
+				"target": "Ladyfish10",
+				"TG": 13
+			},
+			{
+				"source": "SandTrout3_12",
+				"target": "Jacks",
+				"TG": 13
+			},
+			{
+				"source": "SandTrout12",
+				"target": "Mackrel0_3",
+				"TG": 13
+			},
+			{
+				"source": "SandTrout12",
+				"target": "Ladyfish10",
+				"TG": 13
+			},
+			{
+				"source": "SandTrout12",
+				"target": "Jacks",
+				"TG": 13
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "ThreadfinHerring",
+				"TG": 4
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "Manhaden",
+				"TG": 4
+			},
+			{
+				"source": "Mullet0_6",
+				"target": "Menidia_silverside",
+				"TG": 4
+			},
+			{
+				"source": "Mullet6_18",
+				"target": "Mullet18",
+				"TG": 8
+			},
+			{
+				"source": "Mullet6_18",
+				"target": "Bumper",
+				"TG": 8
+			},
+			{
+				"source": "Mullet18",
+				"target": "Bumper",
+				"TG": 8
+			},
+			{
+				"source": "Mackrel0_3",
+				"target": "Ladyfish10",
+				"TG": 13
+			},
+			{
+				"source": "Mackrel0_3",
+				"target": "Jacks",
+				"TG": 13
+			},
+			{
+				"source": "Mackrel3",
+				"target": "Catfish",
+				"TG": 11
+			},
+			{
+				"source": "Ladyfish10",
+				"target": "Jacks",
+				"TG": 13
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "PinFish",
+				"TG": 16
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Spot",
+				"TG": 16
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "SilverPerch",
+				"TG": 16
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "ScaledSardine",
+				"TG": 16
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Mojarra",
+				"TG": 16
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "CaridanShrimp",
+				"TG": 16
+			},
+			{
+				"source": "BayAnchovy",
+				"target": "Shrimp",
+				"TG": 16
+			},
+			{
+				"source": "PinFish",
+				"target": "Spot",
+				"TG": 16
+			},
+			{
+				"source": "PinFish",
+				"target": "SilverPerch",
+				"TG": 16
+			},
+			{
+				"source": "PinFish",
+				"target": "ScaledSardine",
+				"TG": 16
+			},
+			{
+				"source": "PinFish",
+				"target": "Mojarra",
+				"TG": 16
+			},
+			{
+				"source": "PinFish",
+				"target": "CaridanShrimp",
+				"TG": 16
+			},
+			{
+				"source": "PinFish",
+				"target": "Shrimp",
+				"TG": 16
+			},
+			{
+				"source": "Spot",
+				"target": "SilverPerch",
+				"TG": 16
+			},
+			{
+				"source": "Spot",
+				"target": "ScaledSardine",
+				"TG": 16
+			},
+			{
+				"source": "Spot",
+				"target": "Mojarra",
+				"TG": 16
+			},
+			{
+				"source": "Spot",
+				"target": "CaridanShrimp",
+				"TG": 16
+			},
+			{
+				"source": "Spot",
+				"target": "Shrimp",
+				"TG": 16
+			},
+			{
+				"source": "SilverPerch",
+				"target": "ScaledSardine",
+				"TG": 16
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Mojarra",
+				"TG": 16
+			},
+			{
+				"source": "SilverPerch",
+				"target": "CaridanShrimp",
+				"TG": 16
+			},
+			{
+				"source": "SilverPerch",
+				"target": "Shrimp",
+				"TG": 16
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "Mojarra",
+				"TG": 16
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "CaridanShrimp",
+				"TG": 16
+			},
+			{
+				"source": "ScaledSardine",
+				"target": "Shrimp",
+				"TG": 16
+			},
+			{
+				"source": "Mojarra",
+				"target": "CaridanShrimp",
+				"TG": 16
+			},
+			{
+				"source": "Mojarra",
+				"target": "Shrimp",
+				"TG": 16
+			},
+			{
+				"source": "ThreadfinHerring",
+				"target": "Manhaden",
+				"TG": 4
+			},
+			{
+				"source": "ThreadfinHerring",
+				"target": "Menidia_silverside",
+				"TG": 4
+			},
+			{
+				"source": "Manhaden",
+				"target": "Menidia_silverside",
+				"TG": 4
+			},
+			{
+				"source": "CaridanShrimp",
+				"target": "Shrimp",
+				"TG": 16
+			},
+			{
+				"source": "StoneCrab",
+				"target": "BlueCrab",
+				"TG": 20
+			},
+			{
+				"source": "Cyprinodontids",
+				"target": "Poecilids",
+				"TG": 5
+			},
+			{
+				"source": "Pigfish",
+				"target": "Gobies",
+				"TG": 17
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "MacroZooplankton",
+				"TG": 6
+			},
+			{
+				"source": "BenthicInvertebrates",
+				"target": "MicroZoolplankton",
+				"TG": 6
+			},
+			{
+				"source": "MacroZooplankton",
+				"target": "MicroZoolplankton",
+				"TG": 6
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "SeaGrass",
+				"TG": 1
+			},
+			{
+				"source": "AttachedMicroalgae",
+				"target": "Phytoplankton",
+				"TG": 1
+			},
+			{
+				"source": "SeaGrass",
+				"target": "Phytoplankton",
+				"TG": 1
+			},
+			{
+				"source": "PurseSeine",
+				"target": "HaulSeine",
+				"TG": 10
+			}
+		]
+	]
+}
