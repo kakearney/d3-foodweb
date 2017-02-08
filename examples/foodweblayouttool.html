@@ -271,8 +271,7 @@
 
 	
 	<script src="https://d3js.org/d3.v4.min.js"></script>
-	<script src="./d3-foodweb.js"></script>
-	<script src="./labeler.js"></script>
+	<script src="../build/d3-foodweb.js"></script>
 	<script>
 
 	update()
@@ -356,107 +355,7 @@
 		var width = totwidth.valueAsNumber - marl.valueAsNumber - marr.valueAsNumber;
 			  height = totheight.valueAsNumber - mart.valueAsNumber - marb.valueAsNumber;
 	
-		var labelshape = []
-				labelarray = []
-				anchorarray = []
-			  inlabelarray = [];
-	
-		nodedata = d3.selectAll(".nodecircle"); //.nodes();
-		nodecircle = d3.selectAll(".nodecircle").nodes();	
-	
-		svg = d3.select("svg")
-	
-		nodedata.each(function(n,i) {
-		
-			var texttmp = svg.append("svg:text")
-			          .attr("x", 100)
-			          .attr("y", 100)
-								.attr("font-size", fontsz.valueAsNumber)
-								.attr("font-family", "Arial")
-								.text(n.id);
-							
-			var bbox = texttmp.node().getBBox();
-	    texttmp.remove();
-		
-			cradius = nodecircle[i]["r"].baseVal.value
-		
-			if (bbox.width <= cradius*2) {
-				inlabelarray.push({x:      n.x,
-		                       y:      n.y,
-		                       width:  bbox.width,
-		                       height: bbox.height,
-								           name:   n.id});
-				labelarray.push({  x:      n.x,
-				                   y:      n.y,
-				                   width:  bbox.width,
-				                   height: bbox.height,
-								   				 name:   ""});
-				anchorarray.push({ x:      n.x,
-						               y:      n.y,
-	 											   r:      cradius});
-			} else {
-				labelarray.push({  x:      n.x,
-				                   y:      n.y,
-				                   width:  bbox.width,
-				                   height: bbox.height,
-								   				 name:   n.id});
-				anchorarray.push({ x:      n.x,
-						               y:      n.y,
-												   r:      cradius});
-		  }						
-		})
-	
-		// Add labels that fit inside nodes
-
-	  gnode = d3.select(".nodes")
-	  var inlabels = gnode.selectAll('.label1')
-	                  .data(inlabelarray)
-	                 .enter()
-	                 .append("text")
-										.attr("class", "inlabel")
-	                  .attr("x", function(d) {return d.x})
-	                  .attr("y", function(d) {return d.y})
-	                  .attr("text-anchor", "middle")
-	                  .attr("dy", "0.35em")
-	                  .attr("font-size", fontsz.valueAsNumber)
-										.attr("font-family", "Arial")
-	                  .text(function(d) {return d.name});
-									
-		// Use simulated annealing to place the rest of the labels
-
-		var salabels = d3.labeler()
-			                .label(labelarray)
-			                .anchor(anchorarray)
-			                .width(width)
-			                .height(height)
-			                .start(1000);
-
-		var outlabels = gnode.selectAll(".label2")
-				              .data(labelarray)
-				            .enter()
-				            .append("text")
-				              .attr("class", "label")
-				              .attr('text-anchor', 'start')
-				              .text(function(d) { return d.name; })
-				              .attr("x", function(d) { return (d.x); })
-				              .attr("y", function(d) { return (d.y); })
-		                  .attr("font-size", fontsz.valueAsNumber)
-										  .attr("font-family", "Arial")
-				              .attr("fill", "black");
-									
-		// Add lines connecting labels to nodes
-
-	  var lbllinks = gnode.selectAll(".lbllink")
-				            .data(labelarray)
-				            .enter()
-				            .append("line")
-				            .attr("class", "link")
-				            .attr("x1", function(d) { return (d.x); })
-				            .attr("y1", function(d) { return (d.y); })
-				            .attr("x2", function(d,i) { return (anchorarray[i].x); })
-				            .attr("y2", function(d,i) { return (anchorarray[i].y); })
-				            .attr("stroke-width", 0.6)
-				            .attr("stroke", "gray");
+		d3.labelnodes(width, height); 
 	}
 	
 	</script>
