@@ -1,8 +1,8 @@
 # d3-foodweb
 
-This repository holds code for the d3-foodweb plugin, which provides two functions to plot interactive food web graphs using the D3 visualization library.  
+This repository holds code for the d3-foodweb plugin, which provides two functions to plot interactive food web graphs using the D3 visualization library.
 
-This project is still very much in alpha, and is being developed alongside the writing of a manuscript documenting the underlying algorithms.
+This project is still very much in alpha, and is being developed alongside the writing of a manuscript describing the underlying algorithms.  Documentation and examples will improve as development continues.
 
 ## Installing
 
@@ -22,7 +22,57 @@ This function relies on functions from the following D3 modules.
 
 ## Input data
 
-This function is designed to be used with input object data
+These functions are intended to be used with Ecopath-style ocean ecosystem network graphs.  Nodes represent the state variables in an ecosystem (living groups, detrital pools, and fishing fleets), and edges represent the flow of biomass due to primary production, grazing, predation, fisheries catch, and flow to detritus (egestion and non-predatory mortality).
+
+The data that binds to these functions should include description of nodes, flux links, and trophic grouping links.  An (incomplete) example of this format is as follows; see the .json files in the examples folder for more details.  The [TODO foodwebgraph-pkg]() Matlab toolbox is designed to perform the necessary calculations and export data to a properly-formatted JSON file.
+
+    {
+    	"nodes": [
+    		[
+    			{
+    				"B": 0.00100000005,
+    				"type": 0,
+    				"TL": 3.499434938,
+    				"id": "BaleenWhales",
+    				"TG": 5
+    			},
+    			{
+    				"B": 3.407000032,
+    				"type": 3,
+    				"TL": 4.648655012,
+    				"id": "Fleet1",
+    				"TG": 10
+    			}
+    		]
+    	],
+    	"links1": [
+    		[
+    			{
+    				"source": "BaleenWhales",
+    				"target": "Detritus"
+    			},
+    			{
+    				"source": "Detritus",
+    				"target": "ZooplanktonOther"
+    			}
+    		]
+    	],
+    	"links2": [
+    		[
+    			{
+    				"source": "BaleenWhales",
+    				"target": "ToothedWhales",
+    				"TG": 5
+    			},
+    			{
+    				"source": "Krill",
+    				"target": "ZooplanktonOther",
+    				"TG": 4
+    			}
+    		]
+    	]
+    }
+
 
 ## API Reference
 
@@ -149,5 +199,5 @@ Default = 1/3
 
 d3.**labelnodes(*width*,*height*)**
 
-Adds text labels to existing node circles created previously by either d3.foodweblayout or d3.foodwebstatic, using Evan Wang's  [simulated annealing labeling placement routine](https://github.com/tinker10/D3-Labeler).  The *width* and *height* input parameters describe the size of the region to be used for labeling, usually corresponding to the total width/height minus padding (i.e. the plotted axis region) of the underlying food web plot.
+Adds text labels to existing node circles created previously by either d3.foodweblayout or d3.foodwebstatic, using Evan Wang's  [simulated annealing label placement routine](https://github.com/tinker10/D3-Labeler).  The *width* and *height* input parameters describe the size of the region to be used for labeling, usually corresponding to the total width/height minus padding (i.e. the plotted axis region) of the underlying food web plot.
 
