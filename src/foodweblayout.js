@@ -131,7 +131,9 @@ export default function foodweblayout() {
 				.attr("class", "flinks")
 				.selectAll("line")
 				.data(flxdata)
-				.enter().append("line");
+				.enter().append("line")
+					.attr("stroke", "gray")
+					.attr("opacity", 0.1);
 	
 			var glink = svg.append("g")
 				.attr("class", "glinks")
