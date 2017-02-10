@@ -1,4 +1,5 @@
 import * as d3 from 'd3/d3'
+import { tip } from 'd3-tip'
 
 export default function foodwebstatic() {
 
@@ -148,22 +149,13 @@ export default function foodwebstatic() {
 				.call(yAxis);
 			
 			// Initialize tooltip
-				 	 
-			tipformat = function(d) {
-				return "<strong>" + d.id + "</strong><br>" + "B: " + d.B + "<br>" + "TL: " + d.TL
-			}		 
-					 
-			var tooltip = d3.select("body")
-				.append("div")
-				.style("position", "absolute")
-				.style("z-index", "10")
-				.style("opacity", 0)
-				.style("background", "lightsteelblue")
-				.style("padding", "4px")
-				.style("font-size", "8pt")
-				.style("border-radius", "4px")
-				.html("")
-				 				 
+			
+			var mytip = d3.tip()
+				.attr("class", "d3-tip")
+				.html(function(d) {return "<strong>" + d.id + "</strong><br><br>" + "B: " + d.B + "<br>" + "TL: " + d.TL });
+				 				 				 
+			svg.call(mytip);
+				
 			// Plot links
 
 			var flink = svg.append("g")
@@ -205,11 +197,12 @@ export default function foodwebstatic() {
 								}
 							})
 							.style("opacity", function(o) { return (o.source==d.id | o.target == d.id ? 1 : 0.1); });
-						tooltip
-							.style("opacity", 0.9)
-							.style("top",(tl2y(d.y))+"px")
-							.style("left",(d.x*xfac + b2r(d.B)+20) + "px")
-							.html(tipformat(d));
+							mytip.show(d);
+// 						tooltip
+// 							.style("opacity", 0.9)
+// 							// .style("top",(tl2y(d.y))+"px")
+// // 							.style("left",(d.x*xfac + b2r(d.B)+20) + "px")
+// 							.html(tipformat(d));
 					})
 					.on("mouseout", function (d) {
 						flink
@@ -218,7 +211,8 @@ export default function foodwebstatic() {
 						node
 							.style("opacity", 1)
 							.style("fill", function(o) { return colfun(o.cval); });
-						tooltip.style("opacity", 0);
+						// tooltip.style("opacity", 0);
+						mytip.hide(d);
 						
 					});
 			

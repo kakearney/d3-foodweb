@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "d3": "^1.29.5",
+    "d3-tip": "^0.7.1",
     "rollup": "0.27",
     "tape": "4",
     "uglify-js": "2"
