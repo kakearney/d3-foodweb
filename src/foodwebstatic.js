@@ -136,8 +136,16 @@ export default function foodwebstatic() {
 					
 			for(var ii = 0; ii < flxdata.length; ii++ ) {
 				flxdata[ii].xy = [];
-				for (var jj =0; jj < flxdata[ii].xpath.length; jj++) {
-					flxdata[ii].xy.push({x: flxdata[ii].xpath[jj], y: flxdata[ii].ypath[jj]});
+				if ('xpath' in flxdata[0]) {
+					for (var jj =0; jj < flxdata[ii].xpath.length; jj++) {
+						flxdata[ii].xy.push({x: flxdata[ii].xpath[jj], y: flxdata[ii].ypath[jj]});
+					} 
+				} else {
+					for (var kk = 0; kk < nodedata.length; kk++) {
+						if (flxdata[ii].source == nodedata[kk].id | flxdata[ii].target == nodedata[kk].id) {
+							flxdata[ii].xy.push({x: nodedata[kk].x, y: nodedata[kk].y});
+						}
+					}
 				}
 			}
 
@@ -152,6 +160,7 @@ export default function foodwebstatic() {
 			
 			var mytip = d3.tip()
 				.attr("class", "d3-tip")
+				.offset([10, 0])
 				.html(function(d) {return "<strong>" + d.id + "</strong><br><br>" + "B: " + d.B + "<br>" + "TL: " + d.TL });
 				 				 				 
 			svg.call(mytip);
@@ -197,12 +206,7 @@ export default function foodwebstatic() {
 								}
 							})
 							.style("opacity", function(o) { return (o.source==d.id | o.target == d.id ? 1 : 0.1); });
-							mytip.show(d);
-// 						tooltip
-// 							.style("opacity", 0.9)
-// 							// .style("top",(tl2y(d.y))+"px")
-// // 							.style("left",(d.x*xfac + b2r(d.B)+20) + "px")
-// 							.html(tipformat(d));
+						mytip.show(d);
 					})
 					.on("mouseout", function (d) {
 						flink
@@ -211,7 +215,6 @@ export default function foodwebstatic() {
 						node
 							.style("opacity", 1)
 							.style("fill", function(o) { return colfun(o.cval); });
-						// tooltip.style("opacity", 0);
 						mytip.hide(d);
 						
 					});
