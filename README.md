@@ -174,14 +174,23 @@ d3.**foodwebstatic()**
 Creates and returns a new static-position food web diagram.
 
 *foodwebstatic*.**totwidth(*val*)**
+
 *foodwebstatic*.**totheight(*val*)**
+
 *foodwebstatic*.**paddingLeft(*val*)**
+
 *foodwebstatic*.**paddingRight(*val*)**
+
 *foodwebstatic*.**paddingTop(*val*)**
+
 *foodwebstatic*.**paddingBottom(*val*)**
+
 *foodwebstatic*.**tllim([*minval*, *maxval*])**
+
 *foodwebstatic*.**rlim([*minval*, *maxval*])**
+
 *foodwebstatic*.**blim([*minval*, *maxval*])**
+
 *foodwebstatic*.**colfun(*fun*)**
 
 as described for *foodweblayout*
