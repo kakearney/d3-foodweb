@@ -28,7 +28,7 @@ as well as the [d3-tip](http://labratrevenge.com/d3-tip/) plugin.
 
 These functions are intended to be used with Ecopath-style ocean ecosystem network graphs.  Nodes represent the state variables in an ecosystem (living groups, detrital pools, and fishing fleets), and edges represent the flow of biomass due to primary production, grazing, predation, fisheries catch, and flow to detritus (egestion and non-predatory mortality).
 
-The data that binds to these functions should include description of nodes, flux links, and trophic grouping links.  An (incomplete) example of this format is as follows; see the .json files in the examples folder for more details.  The [TODO foodwebgraph-pkg]() Matlab toolbox is designed to perform the necessary calculations and export data to a properly-formatted JSON file.
+The data that binds to these functions should include description of nodes, flux links, and trophic grouping links.  An (incomplete) example of this format is as follows; see the .json files in the examples folder for more details.  The [foodwebgraph-pkg](https://github.com/kakearney/foodwebgraph-pkg) Matlab toolbox is designed to perform the necessary calculations and export data to a properly-formatted JSON file.
 
     {
     	"nodes": [
