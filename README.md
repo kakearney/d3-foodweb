@@ -6,7 +6,9 @@ This project is still very much in alpha, and is being developed alongside the w
 
 ## Installing
 
-If you use NPM, `npm install d3-foodweb`. Otherwise, download the [latest release](https://github.com/kakearney/d3-foodweb/releases/latest).
+<!-- If you use NPM, `npm install d3-foodweb`. Otherwise, download the [latest release](https://github.com/kakearney/d3-foodweb/releases/latest). -->
+
+This package will eventually be made available via npm.  For now, the most up-to-date version can currently be downloaded from [GitHub](https://github.com/kakearney/d3-foodweb/).  Link to the build/d3-foodweb.js or build/d3-foodweb.min.js files to use this plugin on a webpage.
 
 This function relies on functions from the following D3 modules.  
 
@@ -19,6 +21,8 @@ This function relies on functions from the following D3 modules.
 - d3-color
 - d3-drag
 - d3-shape
+
+as well as the [d3-tip](http://labratrevenge.com/d3-tip/) plugin.
 
 ## Input data
 
