@@ -87,7 +87,7 @@ export default function foodwebstatic() {
 				.domain([0,wmax])
 				.range([0,lwmax]);
 				
-			var xfac = (totheight-paddingTop-paddingBottom)/(tllim[1]-tllim[0])
+			// var xfac = (totheight-paddingTop-paddingBottom)/(tllim[1]-tllim[0])
 
 			// Color scale: If nodes have a cval property, use that with a 
 			// continuous color scale (by default, blue-pink-yellow one on the 
@@ -130,8 +130,8 @@ export default function foodwebstatic() {
 			// Format line data as needed for d3.line
 
 			var linefun = d3.line()
-			    .x(function(d) { return d.x*xfac; })
-			    .y(function(d) { return tl2y(d.y); });
+			    .x(function(d) { return d.x; })
+			    .y(function(d) { return d.y; });
 					
 					
 			for(var ii = 0; ii < flxdata.length; ii++ ) {
@@ -186,8 +186,8 @@ export default function foodwebstatic() {
 					.style("fill", function(d) { return colfun(d.cval); })
 					.style("stroke", "white")
 					.style("stroke-width", 0.5)
-					.attr("cx", function(d) { return d.x*xfac; })
-					.attr("cy", function(d) { return tl2y(d.y); })
+					.attr("cx", function(d) { return d.x; })
+					.attr("cy", function(d) { return d.y; })
 					.on("mouseover", function (d) {
 						node
 							.style("fill", "gray")
