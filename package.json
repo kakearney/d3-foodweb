@@ -1,6 +1,6 @@
 {
   "name": "d3-foodweb",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Plot food web using a custom force layout",
   "keywords": [
     "d3",
