@@ -166,7 +166,7 @@ export default function foodwebstatic() {
 			
 			var mytip = tip()
 				.attr("class", "d3-tip")
-				.offset([10, 0])
+				.offset([-10, 0])
 				.html(function(d) {return "<strong>" + d.id + "</strong><br><br>" + "B: " + d.B + "<br>" + "TL: " + d.TL });
 				 				 				 
 			svg.call(mytip);
