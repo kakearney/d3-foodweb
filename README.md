@@ -6,9 +6,7 @@ This project is still in development, and may change as I work on drafting a jou
 
 ## Installing
 
-<!-- If you use NPM, `npm install d3-foodweb`. Otherwise, download the [latest release](https://github.com/kakearney/d3-foodweb/releases/latest). -->
-
-This package will eventually be made available via npm.  For now, the most up-to-date version can currently be downloaded from [GitHub](https://github.com/kakearney/d3-foodweb/).  Link to the build/d3-foodweb.js or build/d3-foodweb.min.js files to use this plugin on a webpage.
+If you use NPM, you can install via `npm install d3-foodweb`. Otherwise, download the [latest release](https://github.com/kakearney/d3-foodweb/releases/latest).
 
 This function relies on functions from the following D3 modules.  
 
