@@ -1,4 +1,4 @@
-import legacy from 'rollup-plugin-legacy';
+import commonjs from 'rollup-plugin-commonjs';
 import nodeResolve from 'rollup-plugin-node-resolve';
 
 export default {
@@ -7,7 +7,7 @@ export default {
 	moduleName: "d3",
 	plugins: [
 		nodeResolve({ jsnext: true, main: true }),
-		legacy({'node_modules/d3-tip/index.js': { tip: 'd3.tip' }})
+		commonjs({include: "node_modules/**"})
 	],
 	dest: "build/d3-foodweb.js"
 }

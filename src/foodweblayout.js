@@ -4,7 +4,7 @@ import { scaleLinear, scaleSqrt, scalePow, scaleOrdinal, schemeCategory10 } from
 import { axisLeft } from 'd3-axis'
 import { interpolateHcl } from 'd3-interpolate'
 import { rgb } from 'd3-color'
-import {drag } from 'd3-drag'
+import { drag } from 'd3-drag'
 import { forceSimulation, forceLink, forceManyBody, forceX, forceY, forceCollide } from 'd3-force'
 
 export default function foodweblayout() {

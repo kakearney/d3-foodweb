@@ -1,11 +1,11 @@
 import { select } from 'd3-selection'
-import { extent } from 'd3-array'
+import { extent, max } from 'd3-array'
 import { scaleLinear, scaleSqrt, scalePow, scaleOrdinal } from 'd3-scale'
 import { axisLeft } from 'd3-axis'
 import { interpolateHcl } from 'd3-interpolate'
 import { rgb } from 'd3-color'
 import { line } from 'd3-shape'
-import { tip } from 'd3-tip'
+import { default as tip } from 'd3-tip'
 
 export default function foodwebstatic() {
 
