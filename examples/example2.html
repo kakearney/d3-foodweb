@@ -1,0 +1,135 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>d3-foodweb</title>
+  <meta name="description" content="Examples for d3-foodweb">
+  <meta name="author" content="Kelly Kearney">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css">
+	
+	<style>
+	body {
+		background-color: white;
+		margin: 50px;
+		text-align: left;
+		font-family: Tahoma, Geneva, sans-serif;
+	}
+	p {
+		margin-bottom: 20px;
+		width: 600px;
+	}
+	
+	.d3-tip {
+	  line-height: 1;
+	  padding: 12px;
+	  background: rgba(0, 0, 0, 0.8);
+	  color: #fff;
+	  border-radius: 5px;
+	  pointer-events: none;
+		font-size: 8pt;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+	
+
+	.d3-tip:after {
+	  box-sizing: border-box;
+	  display: inline;
+	  font-size: 10px;
+	  width: 100%;
+	  line-height: 1;
+	  color: rgba(0, 0, 0, 0.8);
+	  position: absolute;
+	  pointer-events: none;
+	}
+	
+	.d3-tip.n:after {
+	  content: "\25BC";
+	  margin: -1px 0 0 0;
+	  top: 100%;
+	  left: 0;
+	  text-align: center;
+	}
+	
+	</style>
+	
+
+</head>
+
+<body>
+	<h2>d3-foodweb Example</h2>
+	<h3>The simplest food web in the world</h3>
+		
+	<p>This example just demonstrates the format for data required by the 
+  d3-foodweb functions.</p>
+	
+	<div id="div1"></div>
+	<div id="div2"></div>
+	
+  <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+	<script src="../build/d3-foodweb.js"></script>
+	<script>
+
+	simpledata = 
+		{
+			"nodes": [
+				[
+					{
+						"B": 0.5,
+						"type": 0,
+						"TL": 2,
+						"id": "Consumer",
+						"TG": 1
+					},
+					{
+						"B": 1,
+						"type": 1,
+						"TL": 1,
+						"id": "Producer1",
+						"TG": 2
+					},
+					{
+						"B": 2,
+						"type": 1,
+						"TL": 1,
+						"id": "Producer2",
+						"TG": 2
+					}
+				]
+			],
+			"links1": [
+				[
+					{
+						"source": "Producer1",
+						"target": "Consumer"
+					},
+					{
+						"source": "Producer2",
+						"target": "Consumer"
+					}
+				]
+			],
+			"links2": [
+				[
+					{
+						"source": "Producer1",
+						"target": "Producer2",
+						"TG": 2
+					}
+				]
+			]
+		}
+	
+
+	d3.select("#div1")
+		.datum(simpledata)
+		.call(d3.foodweblayout()
+			.totheight(100)
+			.totwidth(200)
+			.rlim([5,10]));
+	
+	
+	</script>
+</body>
+</html>

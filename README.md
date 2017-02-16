@@ -2,7 +2,7 @@
 
 This repository holds code for the d3-foodweb plugin, which provides two functions to plot interactive food web graphs using the D3 visualization library.
 
-This project is still very much in alpha, and is being developed alongside the writing of a manuscript describing the underlying algorithms.  Documentation and examples will improve as development continues.
+This project is still in development, and may change as I work on drafting a journal article describing the underlying algorithms.  Documentation and examples will improve as development continues.
 
 ## Installing
 
@@ -22,60 +22,104 @@ This function relies on functions from the following D3 modules.
 - d3-drag
 - d3-shape
 
-as well as the [d3-tip](http://labratrevenge.com/d3-tip/) plugin.
+as well as the [d3-tip](http://labratrevenge.com/d3-tip/) and [d3-labeler](https://github.com/tinker10/D3-Labeler) plugins.  These are all rolled up in the custom d3-foodweb plugin, and you can call the three main functions without any additional dependencies.
 
 ## Input data
 
 These functions are intended to be used with Ecopath-style ocean ecosystem network graphs.  Nodes represent the state variables in an ecosystem (living groups, detrital pools, and fishing fleets), and edges represent the flow of biomass due to primary production, grazing, predation, fisheries catch, and flow to detritus (egestion and non-predatory mortality).
 
-The data that binds to these functions should include description of nodes, flux links, and trophic grouping links.  An (incomplete) example of this format is as follows; see the .json files in the examples folder for more details.  The [foodwebgraph-pkg](https://github.com/kakearney/foodwebgraph-pkg) Matlab toolbox is designed to perform the necessary calculations and export data to a properly-formatted JSON file.
+The data that binds to these functions should consist of an object with 3 properties:
 
-    {
-    	"nodes": [
-    		[
-    			{
-    				"B": 0.00100000005,
-    				"type": 0,
-    				"TL": 3.499434938,
-    				"id": "BaleenWhales",
-    				"TG": 5
-    			},
-    			{
-    				"B": 3.407000032,
-    				"type": 3,
-    				"TL": 4.648655012,
-    				"id": "Fleet1",
-    				"TG": 10
-    			}
-    		]
-    	],
-    	"links1": [
-    		[
-    			{
-    				"source": "BaleenWhales",
-    				"target": "Detritus"
-    			},
-    			{
-    				"source": "Detritus",
-    				"target": "ZooplanktonOther"
-    			}
-    		]
-    	],
-    	"links2": [
-    		[
-    			{
-    				"source": "BaleenWhales",
-    				"target": "ToothedWhales",
-    				"TG": 5
-    			},
-    			{
-    				"source": "Krill",
-    				"target": "ZooplanktonOther",
-    				"TG": 4
-    			}
-    		]
-    	]
-    }
+- **nodes**: array of data used to create node circles.  Each object in the nodes array includes the following properties:
+	- **B**:  biomass, area of node circle scales to this value
+	- **type**:  group type (0=consumer,1=producer,2=detrital,3=fishing fleet), used for default color scale
+	- **TL**:  trophic level, used to determine node y position
+	- **id**:  string, used to indentify and label nodes
+	- **TG**:  trophic group, used for initial x-position of nodes
+	- **x**:  x-coordinate of node, in pixels (optional for foodweblayout, where it overrides the default initial positioning)
+	- **y**:  y-coordinate of node, in pixels (optional for foodweblayout, where it overrides the default initial positioning)
+	- **cval**:  (optional) value used to map color to nodes
+- **links1**: array of data describing the primary edges (fluxes).  Each object in this array includes the following properties:
+	- **source**:  id of source node
+	- **target**:  id of target node
+	- **Weight**:  (foodwebstatic only), value used to map edge width
+	- **xpath**:  (foodwebstatic only, optional), x-coordinates of the edge line, in pixels
+	- **ypath**:  (foodwebstatic only, optional), y-coordinates of the edge line, in pixels
+	- **cval**: (foodwebstatic only, optional) value used to map color to edges
+- **links2**: array of data describing trophic-group edges (foodweblayout only)
+	- **source**: id of source node
+	- **target**: id of target node
+
+ The following very simple example demonstrates this input format:
+
+```html
+	<script src="https://d3js.org/d3-selection.v1.min.js"></script>
+	<script src="d3-foodweb.js"></script>
+	<script>
+
+	simpledata = 
+		{
+			"nodes": [
+				[
+					{
+						"B": 0.5,
+						"type": 0,
+						"TL": 2,
+						"id": "Consumer",
+						"TG": 1
+					},
+					{
+						"B": 1,
+						"type": 1,
+						"TL": 1,
+						"id": "Producer1",
+						"TG": 2
+					},
+					{
+						"B": 2,
+						"type": 1,
+						"TL": 1,
+						"id": "Producer2",
+						"TG": 2
+					}
+				]
+			],
+			"links1": [
+				[
+					{
+						"source": "Producer1",
+						"target": "Consumer"
+					},
+					{
+						"source": "Producer2",
+						"target": "Consumer"
+					}
+				]
+			],
+			"links2": [
+				[
+					{
+						"source": "Producer1",
+						"target": "Producer2",
+						"TG": 2
+					}
+				]
+			]
+		}
+	
+
+	d3.select("#div1")
+		.datum(simpledata)
+		.call(d3.foodweblayout()
+			.totheight(100)
+			.totwidth(200)
+			.rlim([5,10]));
+	
+	
+	</script>
+```
+
+The [foodwebgraph-pkg](https://github.com/kakearney/foodwebgraph-pkg) Matlab toolbox includes functions to export an Ecopath model to a properly-formatted JSON file for use with these functions.  Examples of such files for the Generic\_37 Ecopath model can be found in the examples folder. 
 
 
 ## API Reference
