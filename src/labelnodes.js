@@ -1,4 +1,4 @@
-import * as d3 from 'd3/d3'
+import {selectAll, select} from 'd3-selection'
 
 // d3.labeler: https://github.com/tinker10/D3-Labeler
 
@@ -287,10 +287,10 @@ export default function labelnodes(width, height) {
 			anchorarray = [],
 			inlabelarray = [];
 
-	var nodedata = d3.selectAll(".nodecircle"); //.nodes();
+	var nodedata = selectAll(".nodecircle"); //.nodes();
 	var nodecircle = nodedata.nodes();	
 
-	var svg = d3.select("svg")
+	var svg = select("svg")
 
 	nodedata.each(function(n,i) {
 	
@@ -334,7 +334,7 @@ export default function labelnodes(width, height) {
 
 	// Add labels that fit inside nodes
 
-	var gnode = d3.select(".nodes")
+	var gnode = select(".nodes")
 	var inlabels = gnode.selectAll('.label1')
 			.data(inlabelarray)
 		.enter()

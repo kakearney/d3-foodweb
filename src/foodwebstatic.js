@@ -1,4 +1,10 @@
-import * as d3 from 'd3/d3'
+import { select } from 'd3-selection'
+import { extent } from 'd3-array'
+import { scaleLinear, scaleSqrt, scalePow, scaleOrdinal } from 'd3-scale'
+import { axisLeft } from 'd3-axis'
+import { interpolateHcl } from 'd3-interpolate'
+import { rgb } from 'd3-color'
+import { line } from 'd3-shape'
 import { tip } from 'd3-tip'
 
 export default function foodwebstatic() {
@@ -30,7 +36,7 @@ export default function foodwebstatic() {
 			
 			// Add SVG canvas
 
-			var svg = d3.select(this).append("svg")
+			var svg = select(this).append("svg")
 							.attr("width", totwidth)
 							.attr("height", totheight);
 
@@ -51,7 +57,7 @@ export default function foodwebstatic() {
 
 			// Scales
 
-			var tllimdefault = d3.extent(nodedata, function(d) {return d.TL});
+			var tllimdefault = extent(nodedata, function(d) {return d.TL});
 
 			if (isNaN(tllim[0])) {
 				tllim[0] = tllimdefault[0]
@@ -60,7 +66,7 @@ export default function foodwebstatic() {
 				tllim[1] = tllimdefault[1]
 			}
 
-			var blimdefault = d3.extent(nodedata, function(d) {return d.B});
+			var blimdefault = extent(nodedata, function(d) {return d.B});
 			if (isNaN(blim[0])) {
 				blim[0] = blimdefault[0]
 			}
@@ -68,21 +74,21 @@ export default function foodwebstatic() {
 				blim[1] = blimdefault[1]
 			}
 
-			var tl2y = d3.scaleLinear()
+			var tl2y = scaleLinear()
 				.domain([tllim[0], tllim[1]])
 				.range([totheight-paddingBottom, paddingTop]);
 
-			var yAxis = d3.axisLeft(tl2y);
+			var yAxis = axisLeft(tl2y);
 
-			var b2r = d3.scaleSqrt()
+			var b2r = scaleSqrt()
 				.domain(blim)
 				.range(rlim)
 				.clamp(true);
 			
 			if (isNaN(wmax)) {	
-				wmax = d3.max(flxdata, function(d) {return d.Weight});	
+				wmax = max(flxdata, function(d) {return d.Weight});	
 			}
-			var weight2lw = d3.scalePow()
+			var weight2lw = scalePow()
 				.exponent(pedge)
 				.domain([0,wmax])
 				.range([0,lwmax]);
@@ -94,15 +100,15 @@ export default function foodwebstatic() {
 			// domain of 0-1).  Otherwise, use node type for color.  Flux lines 
 			// without a cval property match the value of their source node.
 				
-			var coltype = d3.scaleOrdinal()
+			var coltype = scaleOrdinal()
 				.domain([0,1,2,3])
 				.range(["#b3cde3", "#ccebc5", "#fbb4ae", "#decbe4"])
 				.unknown("#ffffff");
 
-			var colval = d3.scaleLinear()
+			var colval = scaleLinear()
 				.domain([0,1])
-				.interpolate(d3.interpolateHcl)
-				.range([d3.rgb("#007AFF"), d3.rgb('#FFF500')]);
+				.interpolate(interpolateHcl)
+				.range([rgb("#007AFF"), rgb('#FFF500')]);
 				
 			if ('cval' in nodedata[0]) {
 				if (typeof colfun === "number" & isNaN(colfun)) {
@@ -127,9 +133,9 @@ export default function foodwebstatic() {
 				}
 			}
 
-			// Format line data as needed for d3.line
+			// Format line data as needed for line
 
-			var linefun = d3.line()
+			var linefun = line()
 			    .x(function(d) { return d.x; })
 			    .y(function(d) { return d.y; });
 					
@@ -158,7 +164,7 @@ export default function foodwebstatic() {
 			
 			// Initialize tooltip
 			
-			var mytip = d3.tip()
+			var mytip = tip()
 				.attr("class", "d3-tip")
 				.offset([10, 0])
 				.html(function(d) {return "<strong>" + d.id + "</strong><br><br>" + "B: " + d.B + "<br>" + "TL: " + d.TL });
@@ -192,7 +198,7 @@ export default function foodwebstatic() {
 						node
 							.style("fill", "gray")
 							.style("opacity", 0.3);
-						d3.select(this)
+						select(this)
 							.style("fill", function(d) { return colfun(d.cval); })
 							.style("opacity", 1); 
 						flink

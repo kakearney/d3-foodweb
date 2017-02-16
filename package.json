@@ -15,7 +15,7 @@
     "url": "https://github.com/kakearney/d3-foodweb.git"
   },
   "scripts": {
-    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -o build/d3-foodweb.js -- index.js",
+    "pretest": "rm -rf build && mkdir build && rollup -c",
     "test": "tape 'test/**/*-test.js'",
     "prepublish": "uglifyjs build/d3-foodweb.js -c -m -o build/d3-foodweb.min.js",
     "postpublish": "zip -j build/d3-foodweb.zip -- LICENSE README.md build/d3-foodweb.js build/d3-foodweb.min.js"
@@ -24,6 +24,8 @@
     "d3": "^1.29.5",
     "d3-tip": "^0.7.1",
     "rollup": "0.27",
+    "rollup-plugin-legacy": "^1.0.0",
+    "rollup-plugin-node-resolve": "^2.0.0",
     "tape": "4",
     "uglify-js": "2"
   }

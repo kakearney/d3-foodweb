@@ -1,4 +1,11 @@
-import * as d3 from 'd3/d3'
+import { select, event } from 'd3-selection'
+import { extent, max } from 'd3-array'
+import { scaleLinear, scaleSqrt, scalePow, scaleOrdinal, schemeCategory10 } from 'd3-scale'
+import { axisLeft } from 'd3-axis'
+import { interpolateHcl } from 'd3-interpolate'
+import { rgb } from 'd3-color'
+import {drag } from 'd3-drag'
+import { forceSimulation, forceLink, forceManyBody, forceX, forceY, forceCollide } from 'd3-force'
 
 export default function foodweblayout() {
 	
@@ -33,7 +40,7 @@ export default function foodweblayout() {
 			
 			// Add SVG canvas
 			
-			var svg = d3.select(this).append("svg")
+			var svg = select(this).append("svg")
 					.attr("width", totwidth)
 					.attr("height", totheight);
 			 
@@ -48,7 +55,7 @@ export default function foodweblayout() {
 				
 			// Set up force simulation
 	
-			var simulation = d3.forceSimulation();
+			var simulation = forceSimulation();
 			
 			// Extract data
 
@@ -58,7 +65,7 @@ export default function foodweblayout() {
 
 			// Scales
 
-			var tllimdefault = d3.extent(nodedata, function(d) {return d.TL});
+			var tllimdefault = extent(nodedata, function(d) {return d.TL});
 			
 			if (isNaN(tllim[0])) {
 				tllim[0] = tllimdefault[0]
@@ -67,7 +74,7 @@ export default function foodweblayout() {
 				tllim[1] = tllimdefault[1]
 			}
 
-			var blimdefault = d3.extent(nodedata, function(d) {return d.B});
+			var blimdefault = extent(nodedata, function(d) {return d.B});
 			if (isNaN(blim[0])) {
 				blim[0] = blimdefault[0]
 			}
@@ -75,13 +82,13 @@ export default function foodweblayout() {
 				blim[1] = blimdefault[1]
 			}
 
-			var tl2y = d3.scaleLinear()
+			var tl2y = scaleLinear()
 				.domain([tllim[0], tllim[1]])
 				.range([totheight-paddingBottom, paddingTop]);
 
-			var yAxis = d3.axisLeft(tl2y);
+			var yAxis = axisLeft(tl2y);
 
-			var b2r = d3.scaleSqrt()
+			var b2r = scaleSqrt()
 				.domain(blim)
 				.range(rlim)
 				.clamp(true);
@@ -91,19 +98,19 @@ export default function foodweblayout() {
 			// domain of 0-1).	Otherwise, use node type for color.	 Flux lines 
 			// without a cval property match the value of their source node.
 
-			var coltype = d3.scaleOrdinal()
+			var coltype = scaleOrdinal()
 				.domain([0,1,2,3])
 				.range(["#b3cde3", "#ccebc5", "#fbb4ae", "#decbe4"])
 				.unknown("#ffffff");
 
-			var colgrp = d3.scaleOrdinal()
+			var colgrp = scaleOrdinal()
 				.domain([1,2,3,4,5,6,7,8,9,10])
-				.range(d3.schemeCategory10);
+				.range(schemeCategory10);
 
-			var colval = d3.scaleLinear()
+			var colval = scaleLinear()
 				.domain([0,1])
-				.interpolate(d3.interpolateHcl)
-				.range([d3.rgb("#007AFF"), d3.rgb('#FFF500')]);
+				.interpolate(interpolateHcl)
+				.range([rgb("#007AFF"), rgb('#FFF500')]);
 			
 			if ('cval' in nodedata[0]) {
 				if (typeof colfun === "number" & isNaN(colfun)) {
@@ -153,7 +160,7 @@ export default function foodweblayout() {
 					.style("fill", function(d) {return colfun(d.cval); })
 					.style("stroke", "white")
 					.style("stroke-width", 0.5)
-					.call(d3.drag()
+					.call(drag()
 						.on("start", dragstarted)
 						.on("drag", dragged)
 						.on("end", dragended));
@@ -163,7 +170,7 @@ export default function foodweblayout() {
 				 
 			// Start nodes with y = trophic level, x = center
 
-			var tgmax = d3.max(nodedata, function(d) {return d.TG});
+			var tgmax = max(nodedata, function(d) {return d.TG});
 			var dx = (totwidth-paddingLeft-paddingRight)/(tgmax+1);
 			for (var i = 0; i < nodedata.length;	i++) {
 				if (!('x' in nodedata[i])) {
@@ -181,12 +188,12 @@ export default function foodweblayout() {
 			// centerx = weak centering force to keep nodes on svg canvas
 		
 			simulation		
-				.force("linkflx", d3.forceLink().id(function(d) { return d.id; }).strength(strengthflxlink))
-				.force("linkgrp", d3.forceLink().id(function(d) { return d.id; }).strength(strengthgrplink))
-				.force("charge",	d3.forceManyBody())
-				.force("centerx", d3.forceX().strength(strengthxcenter).x(totwidth/2))
-				.force("trophic", d3.forceY().strength(strengthtrophic).y(function (d) {return d.type >= 4 ? totheight/2 : tl2y(d.TL); } ))
-				.force("collide", d3.forceCollide().radius(function(d) {return b2r(d.B) + nodepad; }));
+				.force("linkflx", forceLink().id(function(d) { return d.id; }).strength(strengthflxlink))
+				.force("linkgrp", forceLink().id(function(d) { return d.id; }).strength(strengthgrplink))
+				.force("charge",	forceManyBody())
+				.force("centerx", forceX().strength(strengthxcenter).x(totwidth/2))
+				.force("trophic", forceY().strength(strengthtrophic).y(function (d) {return d.type >= 4 ? totheight/2 : tl2y(d.TL); } ))
+				.force("collide", forceCollide().radius(function(d) {return b2r(d.B) + nodepad; }));
 		
 			simulation
 				.nodes(nodedata)
@@ -224,18 +231,18 @@ export default function foodweblayout() {
 			}
 			
 			function dragstarted(d) {
-				if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+				if (!event.active) simulation.alphaTarget(0.3).restart();
 				d.fx = d.x;
 				d.fy = d.y;
 			}
 
 			function dragged(d) {
-				d.fx = d3.event.x;
-				d.fy = d3.event.y;
+				d.fx = event.x;
+				d.fy = event.y;
 			}
 
 			function dragended(d) {
-				if (!d3.event.active) simulation.alphaTarget(0);
+				if (!event.active) simulation.alphaTarget(0);
 				d.fx = null;
 				d.fy = null;
 			}
