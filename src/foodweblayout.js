@@ -47,11 +47,12 @@ export default function foodweblayout() {
 			// Draw rectangle in axis plotting area, for reference
 
 			svg.append("rect")
+				.attr("class", "fwaxis")
 				.attr("x", paddingLeft)
 				.attr("y", paddingTop)
 				.attr("width", totwidth - paddingLeft - paddingRight)
 				.attr("height", totheight - paddingTop - paddingBottom)
-				.attr("fill", "white");
+				.attr("fill", "none");
 				
 			// Set up force simulation
 	
