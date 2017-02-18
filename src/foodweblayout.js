@@ -136,15 +136,15 @@ export default function foodweblayout() {
 			// Set up node circles and link lines
 
 			var flink = svg.append("g")
-				.attr("class", "flinks")
+					.attr("class", "flinks")
+					.attr("opacity", 0.1)
 				.selectAll("line")
 				.data(flxdata)
 				.enter().append("line")
-					.attr("stroke", "gray")
-					.attr("opacity", 0.1);
+				 .attr("stroke", "gray");
 	
 			var glink = svg.append("g")
-				.attr("class", "glinks")
+					.attr("class", "glinks")
 				.selectAll("line")
 				.data(grpdata)
 				.enter().append("line")
