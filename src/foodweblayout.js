@@ -232,7 +232,7 @@ export default function foodweblayout() {
 			}
 			
 			function dragstarted(d) {
-				if (!event.active) simulation.alphaTarget(0.3).restart();
+				if (!event.active) simulation.alpha(0.5).restart();
 				d.fx = d.x;
 				d.fy = d.y;
 			}
@@ -243,7 +243,7 @@ export default function foodweblayout() {
 			}
 
 			function dragended(d) {
-				if (!event.active) simulation.alphaTarget(0);
+				if (!event.active) simulation.alpha(0.2).restart();
 				d.fx = null;
 				d.fy = null;
 			}
