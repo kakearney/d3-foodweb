@@ -28,6 +28,6 @@
     "rollup-plugin-legacy": "^1.0.0",
     "rollup-plugin-node-resolve": "^2.0.0",
     "tape": "4",
-    "uglify-js": "2"
+    "uglify-js": "^3.3.28"
   }
 }
